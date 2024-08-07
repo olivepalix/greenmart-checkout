@@ -1,0 +1,174 @@
+{
+    "products": [
+        {
+            "category": "Fruits",
+            "items": [
+                {
+                    "name": "Apple",
+                    "price": 120.00,
+                    "unit": "kg"
+                },
+                {
+                    "name": "Banana",
+                    "price": 130.30,
+                    "unit": "kg"
+                },
+                {
+                    "name": "Orange",
+                    "price": 50.80,
+                    "unit": "kg"
+                },
+                {
+                    "name": "Strawberry",
+                    "price": 205.00,
+                    "unit": "kg"
+                },
+                {
+                    "name": "Wood Apple",
+                    "price": 100.00,
+                    "unit": "kg"
+                },
+                {
+                    "name": "Kiwi",
+                    "price": 200.00,
+                    "unit": "kg"
+                }
+                
+            ]
+        },
+        {
+            "category": "Vegetables",
+            "items": [
+                {
+                    "name": "Carrot",
+                    "price": 35.50,
+                    "unit": "kg"
+                },
+                {
+                    "name": "Broccoli",
+                    "price": 50.20,
+                    "unit": "kg"
+                },
+                {
+                    "name": "Spinach",
+                    "price": 40.50,
+                    "unit": "kg"
+                },
+                {
+                    "name": "Potato",
+                    "price": 20.00,
+                    "unit": "kg"
+                },
+                {
+                    "name": "Beans",
+                    "price": 30.00,
+                    "unit": "kg"
+                },
+                {
+                    "name": "Beetroot",
+                    "price": 45.00,
+                    "unit": "kg"
+                }
+                
+            ]
+        },
+        {
+            "category": "Dairy Products",
+            "items": [
+                {
+                    "name": "Milk",
+                    "price": 200.50,
+                    "unit": "quantity"
+                },
+                {
+                    "name": "Cheese",
+                    "price": 500.00,
+                    "unit": "quantity"
+                },
+                {
+                    "name": "Butter",
+                    "price": 360.00,
+                    "unit": "quantity"
+                },
+                {
+                    "name": "Curd",
+                    "price": 150.00,
+                    "unit": "quantity"
+                },
+                {
+                    "name": "Yogurt",
+                    "price": 160.00,
+                    "unit": "quantity"
+                },
+                {
+                    "name": "Greek Yogurt",
+                    "price": 1000.00,
+                    "unit": "quantity"
+                }
+               
+            ]
+        },
+        {
+            "category": "Meat and Seafood",
+            "items": [
+                {
+                    "name": "Chicken",
+                    "price": 1040.00,
+                    "unit": "kg"
+                },
+                {
+                    "name": "Salmon",
+                    "price": 1000.00,
+                    "unit": "kg"
+                },
+                {
+                    "name": "Beef",
+                    "price": 1250.00,
+                    "unit": "kg"
+                },
+                {
+                    "name": "Mutton",
+                    "price": 1600.00,
+                    "unit": "kg"
+                }
+                
+            ]
+        },
+        {
+            "category": "Baking and Cooking Ingredients",
+            "items": [
+                {
+                    "name": "Flour",
+                    "price": 300,
+                    "unit": "quantity"
+                },
+                {
+                    "name": "Sugar",
+                    "price": 298,
+                    "unit": "quantity"
+                },
+                {
+                    "name": "Baking Powder",
+                    "price": 250,
+                    "unit": "quantity"
+                },
+                {
+                    "name": "Baking Soda",
+                    "price": 100,
+                    "unit": "quantity"
+                },
+                {
+                    "name": "Vanilla Extract",
+                    "price": 200,
+                    "unit": "quantity"
+                },
+                {
+                    "name": "Cocoa Powder",
+                    "price": 400,
+                    "unit": "quantity"
+                }
+                
+            ]
+        }
+    ]
+}

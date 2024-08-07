@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Mart</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+    <div id="myPage">
+        <header id="mainHeader">
+            <div class="headerContent">
+                <img src="images/homepage/logo.png" id="logo" alt="logo" width="120" height="100">
+                <nav>
+                    <ul id="mainNav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="#">Products</a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="dairyproducts.html">Dairy Products</a></li>
+                                    <li><a href="vegetables.html">Vegetables</a></li>
+                                    <li><a href="cosmetics.html">Cosmetics and Skincare Products</a></li>
+                                </ul>
+                            </div>       
+                        </li>
+                        <li><a href="orderpage.html">Order</a></li>
+                        <li><a href="loyaltyregistration.html">Loyalty Registration</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="benefits-list">
+                <div class="tier">
+                    <h2>Bronze Tier</h2>
+                    <ul class="benefits">
+                        <li>2% discount on all purchases</li>
+                        <li>Exclusive monthly newsletter</li>
+                        <li>Early access to sales</li>
+                    </ul>
+                </div>
+                <div class="tier">
+                    <h2>Silver Tier</h2>
+                    <ul class="benefits">
+                        <li>5% discount on all purchases</li>
+                        <li>Priority customer support</li>
+                        <li>Access to exclusive events and offers</li>
+                        <li>Free Delivery</li>
+                    </ul>
+                </div>
+                <div class="tier">
+                    <h2>Gold Tier</h2>
+                    <ul class="benefits">
+                        <li>10% discount on all purchases</li>
+                        <li>Exclusive discounts and offers to members only</li>
+                        <li>First Access to products</li>
+                        <li>All Silver Tier benefits</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="reg-form">
+                <form method="get">
+                    <fieldset>
+                        <legend>Loyalty Registration</legend>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" id="birthday" name="birthday"><br><br>
+                        <label for="pnumber">Mobile Number:</label>
+                        <input type="tel" id="pnumber" name="pnumber"><br><br>
+                        <label for="OTP">OTP:</label>
+                        <input type="number" id="number" name="number" minlenght="6"><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <label for="userName">Username:</label>
+                        <input type="text" id="userName" name="userName" required><br><br>
+                        <label for="pwd">Password:</label>
+                        <input type="password" id="pwd" name="pwd" required><br><br>
+                        <p class="radio-container">Select the loyalty Program:</p><br>
+                        <input type="radio" id="gold" name="fav_language" value="Gold">
+                        <label for="Gold">Gold Class</label><br>
+                        <input type="radio" id="silver" name="fav_language" value="Silver">
+                        <label for="Silver">Silver</label><br>
+                        <input type="radio" id="Bronze" name="fav_language" value="Bronze">
+                        <label for="Bronze">Bronze</label>
+                        <input type="submit" value="Submit"class="order-btn">
+                    </fieldset>
+                    
+                </form>
+            </div>
+
+        </main>
+        
+
+       
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="https://www.instagram.com/greenmartrd/"><img width="20" height="20" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>Instagram</a></li>
+                    <li><a href="https://www.facebook.com/greenmartstore.lk"><img width="20" height="20" src="https://img.icons8.com/fluency/48/facebook.png" alt="facebook"/>Facebook</a></li>
+                    <li><p>&copy; 2023 Our Supermarket. All rights reserved.</p></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* mystyle.css */
+
+.main-container {
+    background-color: rgb(131, 231, 181); /* Mint green background */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-container {
+    background-color: rgba(169, 169, 169, 0.8); /* light gray color with 80% opacity */
+    width: 60%;
+    max-width: 600px; /* Max width to make it responsive */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+}
+/* mystyle.css */
+/* mystyle.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: mintcream; /* Mint green background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#order-form-container {
+    background-color: rgba(169, 169, 169, 0.8); /* Ash color with 80% opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px; /* Ensure it is much smaller */
+    margin-top: 160px; /* Adjust this value to bring the form further down */
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: calc(100% - 22px); /* Adjust for padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+    
