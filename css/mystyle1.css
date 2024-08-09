@@ -1,14 +1,205 @@
 /* mystyle.css */
 
-.main-container {
-    background-color: rgb(131, 231, 181); /* Mint green background */
+:root{
+    --primary-color: #DAF7A6;
+    --secondary-color: #eed9c4;
+}
+html, body {
+    height: 100%; /* Ensure the body takes the full height of the viewport */
+    margin: 0;
+}
+*{ 
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;  
+}
+#mainHeader {
+    background-color: #DAF7A6;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eed9c4;
+}
+.headerContent { 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
+#logo {
+    margin-right: 10px;  
+}
+
+#mainNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+     
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: white; /* Ensure dropdown background color */
+    padding: 10px; /* Optional: padding around dropdown */
+}
+
+/* Show the dropdown content when hovering over the parent <li> */
+li:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.dropdown-content ul li {
+    margin: 10px 0; /* Space between items */
+}
+
+.dropdown-content ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Link color */
+    display: block; /* Make the link fill the container */
+    padding: 5px; /* Optional: padding inside links */
+}
+
+.dropdown-content ul li a:hover {
+    background-color: #ddd; /* Change background on hover */
+}
+    
+
+#mainNav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mainNav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#mainNav a { 
+    color:black;
+    padding: 7px;
+    text-decoration: none;
+}
+#mainNav  a:hover{ 
+        color:black;
+        padding: 7px;
+        text-decoration: underline;
+}
+.main-container {
+    background-color: var(--secondary-color); 
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .contentContainer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    img {
+        width: 100%; /* Make images responsive and take full width on smaller screens */
+        height: auto; /* Ensure images maintain their aspect ratio */
+    }
+    footer img{
+        width:auto;
+        height:20px;
+    }
+      .headerContent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo {
+        margin-bottom: 20px; /* Space between logo and nav */
+    }
+
+    #mainNav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #mainNav ul li {
+        margin: 10px 0; /* Space between links */
+    }
+
+    .dropdown-content {
+        position: relative; /* Adjust dropdown position */
+        width: 100%; /* Full width for dropdown */
+    }
+
+    .dropdown-content ul {
+        flex-direction: column;
+    }
+
+    .dropdown-content ul li {
+        margin: 5px 0; /* Space between dropdown items */
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding:10px;
+    justify-content: space-between;
+}
+
+  
+footer{
+        list-style-type:none;
+        background-color: #DAF7A6 ;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 5px; 
+        position:relative;
+        width: 100%;     
+        padding: 10px;
+        margin:0;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+footer a{
+        font-weight: bold;
+        display: block;
+        padding: 5px 0;
+        color:black;
+        list-style-type:none;
+        text-decoration: none;
+        text-align: center;
+}
+footer li{
+    margin: 0;
+}
 .overlay-container {
     background-color: rgba(169, 169, 169, 0.8); /* light gray color with 80% opacity */
     width: 60%;
@@ -18,36 +209,92 @@
     border-radius: 8px; /* Rounded corners */
     text-align: center;
 }
-/* mystyle.css */
-/* mystyle.css */
-
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
 
 body {
-    background-color: mintcream; /* Mint green background */
+    background-color: mintcream; 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
 }
 
 
 #order-form-container {
-    background-color: rgba(169, 169, 169, 0.8); /* Ash color with 80% opacity */
+    background-color: rgba(169, 169, 169, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 600px; /* Ensure it is much smaller */
-    margin-top: 160px; /* Adjust this value to bring the form further down */
+    max-width: 600px;
+    margin: 0 auto; /* Center horizontally */
+    flex: 1; /* Allow it to expand within the column */
+}
+#order-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
 }
 
+#order-summary th, #order-summary td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#order-summary th {
+    color: black;
+    font-weight: bold;
+}
+
+#order-summary {
+    background-color: #f2f2f2;
+}
+
+#order-summary tr:hover {
+    background-color: #ddd;
+}
+
+#order-summary td strong {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 10px; /* Add some padding for mobile devices */
+    }
+    
+    footer a {
+        display: block; /* Stack links vertically */
+        margin: 5px 0; /* Add space between links */
+    }
+    
+    #mainHeader {
+        padding: 10px; /* Add some padding for mobile devices */
+    }
+
+    #mainNav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        width: 100%; /* Ensure the menu takes full width */
+    }
+
+    #mainNav ul li {
+        margin: 10px 0; /* Add space between menu items */
+    }
+    #mainNav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #mainNav li {
+        margin: 10px 0;
+    }
+
+}
+
+/*formcontainer*/
 fieldset {
     border: 1px solid #ccc;
     padding: 10px;
@@ -85,6 +332,17 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+#thank-you-message {
+    background-color: #DAF7A6;
+    display: none;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
 }
 
 
