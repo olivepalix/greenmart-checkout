@@ -308,19 +308,54 @@ tfoot td{
 .custom-button:hover {
     background-color: #DAF7A6 ;
 }
-@media screen (max-width: 428px) and (max-height: 926px) {
+@media (max-width: 768px) {
     .products {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto; 
+        margin-left: 0;
     }
-    .products img {
-        max-width: 100%;
+
+    .flex-content {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .product-img {
+        width: 100%;
         height: auto;
     }
+
+    #mainHeader {
+        text-align: center;
+    }
+
+    .headerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mainNav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mainNav li {
+        margin-bottom: 10px;
+    }
+
+    .dropdown-content {
+        width: 100%;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer li {
+        margin-bottom: 10px;
+    }
 }
+
     
 /*vegetable page*/
 .vegetable-img{
@@ -336,6 +371,66 @@ tfoot td{
 #vegContainer{
     margin: 1%;
 }
+@media screen and (max-width: 768px) {
+    .headerContent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo {
+        margin-bottom: 20px;
+    }
+
+    #mainNav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #mainNav ul li {
+        margin: 10px 0;
+    }
+
+    .dropdown-content {
+        position: relative;
+        width: 100%;
+    }
+
+    .dropdown-content ul {
+        flex-direction: column;
+    }
+
+    .dropdown-content ul li {
+        margin: 5px 0;
+    }
+
+    .contentWrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container img,
+    .textWrapper {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .vegetable-img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /*cosmetics page*/
 .main-product-img{
     height: 400px;
@@ -354,6 +449,60 @@ tfoot td{
     padding: 10px;
 
 }
+@media (max-width: 768px) {
+    .main-product-img {
+        height: auto;
+        width: 100%;
+    }
+
+    .Heading {
+        top: 40%;
+        left: 10%;
+        font-size: 24px;
+        text-align: center;
+        color: #ffffff; 
+        text-shadow: 2px 2px 4px #000000, 0 0 10px #ffffff; /* White and black shadow for better visibility */
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table tbody td {
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-img {
+        width: 80%;
+        height: auto;
+    }
+
+    .order-button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer li {
+        margin-bottom: 10px;
+    }
+}
+
 /*orderpage*/
 #orderpage-content{
     line-height: 1.5;
